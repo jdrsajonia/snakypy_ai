@@ -7,6 +7,7 @@ from objects.snakeEnv import SnakeEnv
 
 
 DEVICE="cpu"
+TOTAL_TIMESTEPS=500000
 # ============
 # ENTRENAMIENTO
 # ============
@@ -34,7 +35,7 @@ else:
 
 # ENTRENAR
 model.learn(
-    total_timesteps=1000000,  # puedes subirlo a millones si quieres
+    total_timesteps=TOTAL_TIMESTEPS,  # puedes subirlo a millones si quieres
     callback=checkpoint_callback
 )
 

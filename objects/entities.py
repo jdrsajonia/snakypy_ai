@@ -61,7 +61,6 @@ class snakeObject:
             self.collision=True
             
 
-
     def next_coordinate(self,direction_key):
         actual_position=self.get_head_position()
         current_direction=self.adjust_direction(direction_key) 
